@@ -1,0 +1,14 @@
+(a)
+This task consisted in training several Naive-Bayes classifiers on a collection of BBC articles tha can be categorized 
+in the following categories: business, entertainement, politics, sport and tech. Based on the bar graph realized in step 2
+of this assignment, I believe the best metric suited to this task would be the category "sports" as it contains the most 
+files associated to it compared to other categories. That means the Naive-Bayes classifiers, because they are more exposed
+to sports-type articles, they will be able to identify them with more success than other metrics.
+
+(b)
+There are no differences between step 7 and step 8 (where we create two Naive-Bayes classifiers and use the default
+parameters for each of them) because we change nothing between the two classifiers: they use the same value for smoothing.
+This is important because, we can observe changes between step 7, step 9 and step 10 because of the differences 
+between the three smoothing values used for the three classfiers (step 7 = default, step 9 = 0.0001 and step 10 = 0.9).
+The changes between the classifiers can be more clearly observed in the confusion matrices for each step;
+some values increase, some decrease.

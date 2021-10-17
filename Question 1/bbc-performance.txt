@@ -1,0 +1,173 @@
+The classes are in this order: business, entertainment, politics, sport, tech
+***************************MultinomialNB default values, try 1
+Confusion matrix: 
+[[105   0   2   0   2]
+ [  1  73   1   0   1]
+ [  2   1  74   0   1]
+ [  0   0   0 105   0]
+ [  0   0   1   0  76]]
+
+Classification report: 
+               precision    recall  f1-score   support
+
+     business       0.97      0.96      0.97       109
+entertainment       0.99      0.96      0.97        76
+     politics       0.95      0.95      0.95        78
+        sport       1.00      1.00      1.00       105
+         tech       0.95      0.99      0.97        77
+
+     accuracy                           0.97       445
+    macro avg       0.97      0.97      0.97       445
+ weighted avg       0.97      0.97      0.97       445
+
+Accuracy, marco average f1, weighted average f1: 
+0.9730337078651685, 0.9715892167554383, 0.9730448876442972
+Priors: 
+-1.4904072159795616, -1.7477963458069388, -1.658368535905681, -1.4780154836843984, -1.703625127493802
+Vocabulary size: 
+29421
+Word tokens per class: 
+131592.0, 100839.0, 152783.0, 130094.0, 160123.0
+Word tokens in corpus 
+675431.0
+The number of words with frequency of 0 in each class: 
+1, 1, 1, 1, 1
+The percentage of words with frequency of 0 in each class: 
+3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05
+The number of words with frequency of 0 in the corpus: 
+5
+The percentage of words with frequency of 0 in the corpus: 
+0.0001699466367560586
+My two favorite words in the vocabulary: 
+00, 000
+Their log-prob: 
+-11.989240386048486, -6.706036657310498
+***************************MultinomialNB default values, try 2
+Confusion matrix: 
+[[105   0   2   0   2]
+ [  1  73   1   0   1]
+ [  2   1  74   0   1]
+ [  0   0   0 105   0]
+ [  0   0   1   0  76]]
+
+Classification report: 
+               precision    recall  f1-score   support
+
+     business       0.97      0.96      0.97       109
+entertainment       0.99      0.96      0.97        76
+     politics       0.95      0.95      0.95        78
+        sport       1.00      1.00      1.00       105
+         tech       0.95      0.99      0.97        77
+
+     accuracy                           0.97       445
+    macro avg       0.97      0.97      0.97       445
+ weighted avg       0.97      0.97      0.97       445
+
+Accuracy, marco average f1, weighted average f1: 
+0.9730337078651685, 0.9715892167554383, 0.9730448876442972
+Priors: 
+-1.4904072159795616, -1.7477963458069388, -1.658368535905681, -1.4780154836843984, -1.703625127493802
+Vocabulary size: 
+29421
+Word tokens per class: 
+131592.0, 100839.0, 152783.0, 130094.0, 160123.0
+Word tokens in corpus 
+675431.0
+The number of words with frequency of 0 in each class: 
+1, 1, 1, 1, 1
+The percentage of words with frequency of 0 in each class: 
+3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05
+The number of words with frequency of 0 in the corpus: 
+5
+The percentage of words with frequency of 0 in the corpus: 
+0.0001699466367560586
+My two favorite words in the vocabulary: 
+00, 000
+Their log-prob: 
+-11.989240386048486, -6.706036657310498
+***************************MultinomialNB smoothing = 0.0001
+Confusion matrix: 
+[[103   1   2   0   3]
+ [  0  74   0   0   2]
+ [  2   0  75   0   1]
+ [  0   0   0 105   0]
+ [  1   0   1   0  75]]
+
+Classification report: 
+               precision    recall  f1-score   support
+
+     business       0.97      0.94      0.96       109
+entertainment       0.99      0.97      0.98        76
+     politics       0.96      0.96      0.96        78
+        sport       1.00      1.00      1.00       105
+         tech       0.93      0.97      0.95        77
+
+     accuracy                           0.97       445
+    macro avg       0.97      0.97      0.97       445
+ weighted avg       0.97      0.97      0.97       445
+
+Accuracy, marco average f1, weighted average f1: 
+0.9707865168539326, 0.9698355070721807, 0.9708506547197212
+Priors: 
+-1.4904072159795616, -1.7477963458069388, -1.658368535905681, -1.4780154836843984, -1.703625127493802
+Vocabulary size: 
+29421
+Word tokens per class: 
+131592.0, 100839.0, 152783.0, 130094.0, 160123.0
+Word tokens in corpus 
+675431.0
+The number of words with frequency of 0 in each class: 
+1, 1, 1, 1, 1
+The percentage of words with frequency of 0 in each class: 
+3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05
+The number of words with frequency of 0 in the corpus: 
+5
+The percentage of words with frequency of 0 in the corpus: 
+0.0001699466367560586
+My two favorite words in the vocabulary: 
+00, 000
+Their log-prob: 
+-20.997824235220357, -6.509368693809706
+***************************MultinomialNB smoothing = 0.9
+Confusion matrix: 
+[[105   0   2   0   2]
+ [  1  73   1   0   1]
+ [  2   1  74   0   1]
+ [  0   0   0 105   0]
+ [  0   0   1   0  76]]
+
+Classification report: 
+               precision    recall  f1-score   support
+
+     business       0.97      0.96      0.97       109
+entertainment       0.99      0.96      0.97        76
+     politics       0.95      0.95      0.95        78
+        sport       1.00      1.00      1.00       105
+         tech       0.95      0.99      0.97        77
+
+     accuracy                           0.97       445
+    macro avg       0.97      0.97      0.97       445
+ weighted avg       0.97      0.97      0.97       445
+
+Accuracy, marco average f1, weighted average f1: 
+0.9730337078651685, 0.9715892167554383, 0.9730448876442972
+Priors: 
+-1.4904072159795616, -1.7477963458069388, -1.658368535905681, -1.4780154836843984, -1.703625127493802
+Vocabulary size: 
+29421
+Word tokens per class: 
+131592.0, 100839.0, 152783.0, 130094.0, 160123.0
+Word tokens in corpus 
+675431.0
+The number of words with frequency of 0 in each class: 
+1, 1, 1, 1, 1
+The percentage of words with frequency of 0 in each class: 
+3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05, 3.398932735121172e-05
+The number of words with frequency of 0 in the corpus: 
+5
+The percentage of words with frequency of 0 in the corpus: 
+0.0001699466367560586
+My two favorite words in the vocabulary: 
+00, 000
+Their log-prob: 
+-12.076159461193074, -6.688102959890167
