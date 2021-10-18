@@ -1,5 +1,6 @@
 # COMP472_MiniProject1
 GitHub reposiotry link: https://github.com/DavidZ08/COMP472_MiniProject1.git
+
 Instructions to run Task #1:
 1. Download Pycharm Community edition here https://www.jetbrains.com/pycharm/download/#section=windows
 2. Open the "Q1" folder through Pycharm.
