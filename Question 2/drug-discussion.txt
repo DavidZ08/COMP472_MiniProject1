@@ -1,3 +1,6 @@
 Drug Discussion
 
-The same model does not necessarily always give the same results. This can be explained simply by the fact that the 'train_test_split' function on its default parameters sets the attribute 'shuffle' to true.  This means each time the data is passed through this function the resulting train and test sets of data will always have different data to some degree. This can affect the already unequal distribution of the drug data. If one class of data is significantly overrepresented in the training then it can result in the model being overfitted in the sense that it is really good at predicting that specific class, and less so for the classes that are underrepresented.
+The same model does not necessarily always give the same results. This can be explained simply by the fact that the 'train_test_split' function on its default parameters sets the 
+attribute 'shuffle' to true.  This means each time the data is passed through this function the resulting train and test sets of data will always have different data to some 
+degree. This can affect the already unequal distribution of the drug data. If one class of data is significantly overrepresented in the training then it can result in the model 
+being overfitted in the sense that it is really good at predicting that specific class, and less so for the classes that are underrepresented.
