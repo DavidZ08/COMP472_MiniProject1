@@ -1,0 +1,641 @@
+
+(A)
+
+********************************************************************************
+GaussianNB
+ParametersGaussianNB()
+********************************************************************************
+
+(B)
+
+A  6   0   0   0   0  
+B  0   2   0   0   0  
+C  0   0   6   0   0  
+X  0   0   0   12  0  
+Y  2   2   3   0   17 
+   A   B   C   X   Y
+
+(C)
+
+Class Recall
+   drugA 1.0
+   drugB 1.0
+   drugC 1.0
+   drugX 1.0
+   drugY 0.7083333333333334
+
+Class Precision
+   drugA 0.75
+   drugB 0.5
+   drugC 0.6666666666666666
+   drugX 1.0
+   drugY 1.0
+
+Class F1
+   drugA 0.8571428571428571
+   drugB 0.6666666666666666
+   drugC 0.8
+   drugX 1.0
+   drugY 0.8292682926829268
+
+(D)
+
+Accuracy 0.86
+
+F1 Macro 0.8306155632984901
+
+F1 Weighted 0.8635725900116143
+
+
+(A)
+
+********************************************************************************
+DecisionTreeClassifier
+ParametersDecisionTreeClassifier()
+********************************************************************************
+
+(B)
+
+A  6   0   0   0   0  
+B  0   2   0   0   0  
+C  0   0   6   0   0  
+X  0   0   0   12  0  
+Y  0   0   0   0   24 
+   A   B   C   X   Y
+
+(C)
+
+Class Recall
+   drugA 1.0
+   drugB 1.0
+   drugC 1.0
+   drugX 1.0
+   drugY 1.0
+
+Class Precision
+   drugA 1.0
+   drugB 1.0
+   drugC 1.0
+   drugX 1.0
+   drugY 1.0
+
+Class F1
+   drugA 1.0
+   drugB 1.0
+   drugC 1.0
+   drugX 1.0
+   drugY 1.0
+
+(D)
+
+Accuracy 1.0
+
+F1 Macro 1.0
+
+F1 Weighted 1.0
+
+
+(A)
+
+********************************************************************************
+DecisionTreeClassifier GridSearchCV
+Parameters: GridSearchCV(estimator=DecisionTreeClassifier(),
+             param_grid={'criterion': ['entropy', 'gini'],
+                         'max_depth': [1, 2, 3, 4, 5, 3, 7],
+                         'min_samples_split': [2, 3, 4]})
+Best Parameters:  {'criterion': 'entropy', 'max_depth': 4, 'min_samples_split': 2}
+********************************************************************************
+
+(B)
+
+A  6   0   0   0   0  
+B  0   2   0   0   0  
+C  0   0   6   0   0  
+X  0   0   0   12  0  
+Y  0   0   0   0   24 
+   A   B   C   X   Y
+
+(C)
+
+Class Recall
+   drugA 1.0
+   drugB 1.0
+   drugC 1.0
+   drugX 1.0
+   drugY 1.0
+
+Class Precision
+   drugA 1.0
+   drugB 1.0
+   drugC 1.0
+   drugX 1.0
+   drugY 1.0
+
+Class F1
+   drugA 1.0
+   drugB 1.0
+   drugC 1.0
+   drugX 1.0
+   drugY 1.0
+
+(D)
+
+Accuracy 1.0
+
+F1 Macro 1.0
+
+F1 Weighted 1.0
+
+
+(A)
+
+********************************************************************************
+MLPClassifier
+ParametersMLPClassifier(activation='logistic', hidden_layer_sizes=(1, 100), solver='sgd')
+********************************************************************************
+
+(B)
+
+A  0   0   0   0   6  
+B  0   0   0   0   2  
+C  0   0   0   0   6  
+X  0   0   0   0   12 
+Y  0   0   0   0   24 
+   A   B   C   X   Y
+
+(C)
+
+Class Recall
+   drugA 0.0
+   drugB 0.0
+   drugC 0.0
+   drugX 0.0
+   drugY 1.0
+
+Class Precision
+   drugA 0.0
+   drugB 0.0
+   drugC 0.0
+   drugX 0.0
+   drugY 0.48
+
+Class F1
+   drugA 0.0
+   drugB 0.0
+   drugC 0.0
+   drugX 0.0
+   drugY 0.6486486486486487
+
+(D)
+
+Accuracy 0.48
+
+F1 Macro 0.12972972972972974
+
+F1 Weighted 0.3113513513513514
+
+
+(A)
+
+********************************************************************************
+MLPClassifier GridSearchCV
+Parameters: GridSearchCV(estimator=MLPClassifier(),
+             param_grid={'activation': ['logistic', 'tanh', 'relu', 'identity'],
+                         'hidden_layer_sizes': [(20, 50), (10, 10, 10)],
+                         'solver': ['adam', 'sgd']})
+Best Parameters:  {'activation': 'tanh', 'hidden_layer_sizes': (20, 50), 'solver': 'adam'}
+********************************************************************************
+
+(B)
+
+A  5   1   0   0   0  
+B  0   2   0   0   0  
+C  0   0   0   6   0  
+X  0   0   0   11  1  
+Y  0   1   0   0   23 
+   A   B   C   X   Y
+
+(C)
+
+Class Recall
+   drugA 0.8333333333333334
+   drugB 1.0
+   drugC 0.0
+   drugX 0.9166666666666666
+   drugY 0.9583333333333334
+
+Class Precision
+   drugA 1.0
+   drugB 0.5
+   drugC 0.0
+   drugX 0.6470588235294118
+   drugY 0.9583333333333334
+
+Class F1
+   drugA 0.9090909090909091
+   drugB 0.6666666666666666
+   drugC 0.0
+   drugX 0.7586206896551724
+   drugY 0.9583333333333334
+
+(D)
+
+Accuracy 0.82
+
+F1 Macro 0.6585423197492163
+
+F1 Weighted 0.7778265412748171
+
+---Metrics---
+
+Gaussian
+Accuracy  0.84
+F1-Macro  0.8214386232962084
+F1-Weighted  0.8428499055124442
+
+Decision Tree
+Accuracy  0.98
+F1-Macro  0.9636363636363636
+F1-Weighted  0.98
+
+Top-Decision Tree
+Accuracy  0.98
+F1-Macro  0.9636363636363636
+F1-Weighted  0.98
+
+Perceptron
+Accuracy  0.44
+F1-Macro  0.2216039279869067
+F1-Weighted  0.32782324058919804
+
+MLP
+Accuracy  0.4
+F1-Macro  0.1142857142857143
+F1-Weighted  0.22857142857142862
+
+Top MLP
+Accuracy  0.62
+F1-Macro  0.43924611973392463
+F1-Weighted  0.5412195121951219
+
+---Metrics---
+
+Gaussian
+Accuracy  0.82
+F1-Macro  0.8064517443340973
+F1-Weighted  0.8332316781257958
+
+Decision Tree
+Accuracy  0.98
+F1-Macro  0.9532467532467532
+F1-Weighted  0.9794805194805195
+
+Top-Decision Tree
+Accuracy  0.98
+F1-Macro  0.9532467532467532
+F1-Weighted  0.9794805194805195
+
+Perceptron
+Accuracy  0.64
+F1-Macro  0.36095238095238097
+F1-Weighted  0.6211428571428571
+
+MLP
+Accuracy  0.56
+F1-Macro  0.14358974358974358
+F1-Weighted  0.40205128205128204
+
+Top MLP
+Accuracy  0.84
+F1-Macro  0.6449282296650717
+F1-Weighted  0.8072535885167464
+
+---Metrics---
+
+Gaussian
+Accuracy  0.82
+F1-Macro  0.8222953517071163
+F1-Weighted  0.8230275606746196
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.48
+F1-Macro  0.12972972972972974
+F1-Weighted  0.3113513513513514
+
+MLP
+Accuracy  0.48
+F1-Macro  0.12972972972972974
+F1-Weighted  0.3113513513513514
+
+Top MLP
+Accuracy  0.74
+F1-Macro  0.48869612361073467
+F1-Weighted  0.6622716183247492
+
+---Metrics---
+
+Gaussian
+Accuracy  0.9
+F1-Macro  0.9126870748299319
+F1-Weighted  0.9016292517006803
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.66
+F1-Macro  0.3361581920903955
+F1-Weighted  0.5690112994350283
+
+MLP
+Accuracy  0.52
+F1-Macro  0.1368421052631579
+F1-Weighted  0.35578947368421054
+
+Top MLP
+Accuracy  0.84
+F1-Macro  0.6859259259259259
+F1-Weighted  0.7954074074074075
+
+---Metrics---
+
+Gaussian
+Accuracy  0.92
+F1-Macro  0.8147619047619047
+F1-Weighted  0.9300952380952381
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.4
+F1-Macro  0.1745249824067558
+F1-Weighted  0.3875580577058409
+
+MLP
+Accuracy  0.52
+F1-Macro  0.1368421052631579
+F1-Weighted  0.35578947368421054
+
+Top MLP
+Accuracy  0.78
+F1-Macro  0.5118181818181818
+F1-Weighted  0.7783939393939394
+
+---Metrics---
+
+Gaussian
+Accuracy  0.84
+F1-Macro  0.8160952380952381
+F1-Weighted  0.8473619047619048
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.7
+F1-Macro  0.2966507177033493
+F1-Weighted  0.6312599681020733
+
+MLP
+Accuracy  0.54
+F1-Macro  0.14025974025974025
+F1-Weighted  0.3787012987012987
+
+Top MLP
+Accuracy  0.92
+F1-Macro  0.7447619047619047
+F1-Weighted  0.893904761904762
+
+---Metrics---
+
+Gaussian
+Accuracy  0.86
+F1-Macro  0.8393939393939395
+F1-Weighted  0.8760606060606061
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.24
+F1-Macro  0.1778129117259552
+F1-Weighted  0.23104084321475626
+
+MLP
+Accuracy  0.4
+F1-Macro  0.1142857142857143
+F1-Weighted  0.22857142857142862
+
+Top MLP
+Accuracy  0.64
+F1-Macro  0.47079303675048356
+F1-Weighted  0.6149194068343005
+
+---Metrics---
+
+Gaussian
+Accuracy  0.88
+F1-Macro  0.8710774410774409
+F1-Weighted  0.8818720538720538
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.42
+F1-Macro  0.2011594202898551
+F1-Weighted  0.3465507246376812
+
+MLP
+Accuracy  0.44
+F1-Macro  0.12222222222222223
+F1-Weighted  0.26888888888888896
+
+Top MLP
+Accuracy  0.66
+F1-Macro  0.5116666666666666
+F1-Weighted  0.6196666666666667
+
+---Metrics---
+
+Gaussian
+Accuracy  0.92
+F1-Macro  0.8565686274509805
+F1-Weighted  0.9242549019607843
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.36
+F1-Macro  0.12413793103448276
+F1-Weighted  0.22344827586206897
+
+MLP
+Accuracy  0.36
+F1-Macro  0.10588235294117647
+F1-Weighted  0.19058823529411764
+
+Top MLP
+Accuracy  0.54
+F1-Macro  0.24440911499735032
+F1-Weighted  0.4637201907790143
+
+---Metrics---
+
+Gaussian
+Accuracy  0.92
+F1-Macro  0.8880382775119617
+F1-Weighted  0.9251674641148325
+
+Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Top-Decision Tree
+Accuracy  1.0
+F1-Macro  1.0
+F1-Weighted  1.0
+
+Perceptron
+Accuracy  0.68
+F1-Macro  0.312262156448203
+F1-Weighted  0.5826638477801268
+
+MLP
+Accuracy  0.4
+F1-Macro  0.1142857142857143
+F1-Weighted  0.22857142857142862
+
+Top MLP
+Accuracy  0.86
+F1-Macro  0.6865800865800866
+F1-Weighted  0.835064935064935
+
+
+
+AVERAGES
+
+
+Guassian
+Accuracy 0.8720000000000001
+F1 Macro 0.8448808222458819
+F1 Weighted 0.878555056487896
+
+Decision Tree
+Accuracy 0.9960000000000001
+F1 Macro 0.9916883116883117
+F1 Weighted 0.995948051948052
+
+Top Decision Tree
+Accuracy 0.9960000000000001
+F1 Macro 0.9916883116883117
+Weighted 0.995948051948052
+
+Perceptron
+Accuracy 0.502
+F1 Macro 0.2334992350368014
+F1 Weighted 0.4231850465820982
+
+MLP
+Accuracy 0.462
+F1 Macro 0.1258225142126071
+F1 Weighted 0.29488742893696457
+
+Top MLP
+Accuracy 0.744
+F1 Macro 0.542882539051033
+F1 Weighted 0.7011822027087642
+
+
+
+STANDARD DEVIATIONS
+
+
+Guassian
+Accuracy 0.0015360000000000029
+F1 Macro 0.0011585420592188892
+F1 Weighted 0.0014852607918669797
+
+Decision Tree
+Accuracy 6.400000000000013e-05
+F1 Macro 0.00028173385056501956
+F1 Weighted 6.568662506324839e-05
+
+Top Decision Tree
+Accuracy 6.400000000000013e-05
+F1 Macro 0.00028173385056501956
+F1 Weighted 6.568662506324839e-05
+
+Perceptron
+Accuracy 0.022516000000000005
+F1 Macro 0.0067469169488944165
+F1 Weighted 0.02347381753130367
+
+MLP
+Accuracy 0.004516000000000002
+F1 Macro 0.00015921024342219572
+F1 Weighted 0.005094571662186259
+
+Top MLP
+Accuracy 0.013903999999999996
+F1 Macro 0.020217837818164268
+F1 Weighted 0.017873410682738025
+
+
+
+
