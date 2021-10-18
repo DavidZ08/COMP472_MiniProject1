@@ -13,7 +13,7 @@ click on the "play" icon at the left of " if __name__ == '__main__' ".
 
 Instructions to run Task #2
 1. Open the 'Question 2' folder.
-2. download the 'Mini-Project Question 2 Code.ipynb' and open the file with Jupyter Notebook.
+2. download 'Mini-Project Question 2 Code.ipynb' and open the file with Jupyter Notebook.
 3. Follow the instruction listed under 'Step 1:' which consists of selecting the kernel drop down menu and selecting restart and run all.
 4. Scroll down and follow instructions listed under 'Step 2:' Which consists of:
         1. Uncommenting the all '%%script false' found in the cells before 'Step 2' cell. 
